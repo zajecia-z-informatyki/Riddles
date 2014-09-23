@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<style>
+#menu1 { display:block;
+
+list-style-type:none;
+  padding:0;
+  margin:0;
+  font-size:18px;
+  height:2em;
+  line-height:2em;
+  text-align:center;
+} 
+#menu1 a{
+  display:block;
+  color:#000;
+  text-decoration:none;
+  padding:0 5px;
+}
+
+#menu1 li { display:block;
+width:150px;
+background-color:#FDD700;
+float:left;
+  background-color:#FDD700;
+  width:150px;
+  margin-left:1px;
+}
+#menu1 > li > a:hover {
+  color:#09C;
+}
+
+#menu1 > li:hover {
+  background-color:#EEE;
+}
+
+
+#menu1 > li > ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+
+
+
+
+
+
+
+#menu2 { ... }
+#menu2 li { ... }
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<ul id="menu1">
+
+<li>Level</li>
+	<ol>
+	<li>easy</li>
+	<li>medium</li>
+	<li>hard</li>
+	</ol>
+<li>Historical</li>
+</ul>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
+
+
+

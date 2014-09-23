@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Riddles</title>
+	<link rel="icon" type="image/png" href="ikona.png">
+
+    <style>
+
+DIV.all
+{
+position: relative;
+width:1200px;
+background-color: #ffffff;
+}
+
+ * { margin: 0 auto; }
+
+ 
+html {
+	height: 100%;
+	width: 100%;
+}
+
+DIV.facebook{
+position:absolute;
+right:220px;
+margin-top:50px;}
+
+DIV.logo{
+display:inline-block;
+margin-right:10px;
+position: relative;
+left:0px;
+top:10px;
+width:326;
+height:128;
+float:left;
+}
+
+DIV.zagadka1{
+position:absolute;
+margin-top:10px;
+top:150px;
+width:500px;
+left:100px;
+margin-left:100px;
+z-index:1;
+}
+
+DIV.menu{
+position:relative;
+z-index:2;}
+      /* ------------------------CZĘŚĆ-GÓRNA-MENU------------------------ */
+
+      /* usunięcie domyślnych właściwości CSS z elementów - ol - oraz - ul */
+      #menu, #menu ul, #menu ol {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+      }
+
+      /* wygląd głównego elementu - ol */
+      #menu {
+        background-color:#FFF;
+        font-size:18px;
+        height:2em;
+        line-height:2em;
+        text-align:center;
+
+      }
+
+      /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+      #menu a {
+        display:inline-block;
+        text-decoration:none;
+        color:#000;
+        padding:0 5px;
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+      #menu > li {
+        float:left;
+        width:180px;
+        margin-left:10px;
+	margin-top:55px;
+        background-color:#FDD700;
+        height:2em;
+      }
+
+      
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu > li:hover {
+        background-color:#EEE;
+      }
+
+      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu > li:hover > a {
+        color:#09C;
+      }
+
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu > li:hover > ul {
+        display:block;
+      }
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-1----------------------- */
+
+      /* wygląd głównych rozwijanych elementów - ul */
+      #menu > li > ul {
+        display:none;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej */
+      #menu > li > ul > li {
+        position:relative;
+        background-color:#EEE;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej */
+      #menu > li > ul > li > a {
+        border-top:1px solid #FFF;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      #menu > li > ul > li:hover {
+        background-color:#DDD;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      #menu > li > ul > li:hover > a {
+        color:#09C;
+      }
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-2----------------------- */
+
+      /* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+      #menu > li > ul > li > ol {
+        display:none;
+        width:150%;
+        position:absolute;
+        left:100%;
+        margin-top:-2em;
+      }
+
+      /* wygląd głównego elementu - ol - w drugiej części rozwijanej, po najechaniu kursorem myszki na jego rodzica - li */
+      #menu > li > ul > li:hover > ol {
+        display:block;
+      }
+
+      /* wygląd elementów - li - w drugiej części rozwijanej */
+      #menu > li > ul > li > ol > li {
+        background-color:#CCC;
+      }
+
+      /* wygląd elementów - a - w drugiej części rozwijanej */
+      #menu > li > ul > li > ol > li > a {
+        border-top:1px solid #FFF;
+        border-left:1px solid #FFF;
+      }
+
+      /* wygląd elementu - a - w drugiej części rozwijanej, po najechaniu kursorem myszki */
+      #menu > li > ul > li > ol > li > a:hover {
+        color:#09C;
+      }
+
+      /* ------------------------WSPÓLNE----------------------- */
+
+      /* zaokrąglone rogi wszystkich elementów - li - oraz - a */
+      #menu li, ol a {
+        border-radius:6px;
+      }
+
+     
+
+
+
+
+
+
+
+
+  /* ------------------------CZĘŚĆ-GÓRNA-MENU------------------------ */
+
+      /* usunięcie domyślnych właściwości CSS z elementów - ol - oraz - ul */
+      #menu2, #menu2 ul, #menu2 ol {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+      }
+
+      /* wygląd głównego elementu - ol */
+      #menu2 {
+        background-color:#FFF;
+        font-size:18px;
+        height:2em;
+        line-height:2em;
+        text-align:center;
+      }
+
+      /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+      #menu2 a {
+        display:block;
+        text-decoration:none;
+        color:#000;
+        padding:0 5px;
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+      #menu2 > li {
+        background-image:url(right.png);
+        background-repeat:no-repeat;
+        background-position:98% center;
+        width:180px;
+        margin-left:10px;
+        background-color:#FDD700;
+        height:2em;
+	margin-top:100px;
+      }
+
+     
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu2 > li:hover {
+	background-image:url("down.png");
+        background-repeat:no-repeat;
+        background-position:98% center;
+     
+      }
+
+      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu2 > li:hover > a {
+        color:#09C;
+      }
+
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu2 > li:hover > ul {
+        display:block;
+      }
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-1----------------------- */
+
+      /* wygląd głównych rozwijanych elementów - ul ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
+      #menu2 > li > ul {
+        display:none;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej */
+      #menu2 > li > ul > li {
+        position:relative;
+        background-color:#EEE;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej */
+      #menu2 > li > ul > li > a {
+        border-top:1px solid #FFF;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      #menu2 > li > ul > li:hover {
+        background-color:#DDD;
+	
+
+      }
+#menu2 > li > ul > li:hover:first-child {
+        background-color:#DDD;
+	background-image:url(right.png);
+        background-repeat:no-repeat;
+        background-position:98% center;
+
+      }
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      #menu2 > li > ul > li:hover > a {
+        color:#09C;
+      }
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-2----------------------- */
+
+      /* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+      #menu2 > li > ul > li > ol {
+        display:none;
+        width:150%;
+        position:absolute;
+        left:100%;
+        margin-top:-2em;
+      }
+
+      /* wygląd głównego elementu - ol - w drugiej części rozwijanej, po najechaniu kursorem myszki na jego rodzica - li */
+      #menu2 > li > ul > li:hover > ol {
+        display:block;
+      }
+
+      /* wygląd elementów - li - w drugiej części rozwijanej */
+      #menu2 > li > ul > li > ol > li {
+        background-color:#CCC;
+      }
+
+      /* wygląd elementów - a - w drugiej części rozwijanej */
+      #menu2 > li > ul > li > ol > li > a {
+        border-top:1px solid #FFF;
+        border-left:1px solid #FFF;
+      }
+
+      /* wygląd elementu - a - w drugiej części rozwijanej, po najechaniu kursorem myszki */
+      #menu2 > li > ul > li > ol > li > a:hover {
+        color:#09C;
+      }
+
+      /* ------------------------WSPÓLNE----------------------- */
+
+      /* zaokrąglone rogi wszystkich elementów - li - oraz - a */
+      #menu2 li, ol a {
+        border-radius:6px;
+      }
+
+
+
+
+
+
+
+
+    </style>
+
+  </head>
+
+<body>
+
+<div class="all">
+
+
+<div class="logo">
+<img src="logo3.png" width="326" height="128">
+</div>
+
+<div class="facebook">
+<a href="https://www.facebook.com/pages/Riddles/553337254777149?fref=ts"><img src="facebook.png" width="50" height="50"></a>
+</div>
+
+<div class="menu">
+  <ol id="menu">
+    <li class="dol"><a href="#">Home</a>
+      
+    </li>
+
+    <li class="dol"><a href="#">Riddle of the day</a>
+      
+    </li>
+
+    <li><a href="#">Send your own</a></li>
+
+
+     
+    </li>
+  </ol>
+
+
+
+
+<ol id="menu2">
+    <li class="dol"><a href="#">Categories:</a>
+      <ul>
+     
+
+        <li class="prawo"><a href="#">Levels</a>
+          <ol>
+            <li><a href="#">Easy</a></li>
+            <li><a href="#">Medium</a></li>
+            <li><a href="#">Damn hard</a></li>
+          </ol>
+        </li>
+	<li><a href="#">General</a></li>
+        <li><a href="#">Famous Riddles</a></li> 
+        <li><a href="#">Historical</a></li>
+        <li><a href="#">Logical</a></li>
+	<li><a href="#">For kids </a></li>
+      </ul>
+    </li>
+</ol>
+</div>
+
+<div class="zagadka1">
+<b><p align="left">Which creature...</p></b><i><font color="Grey"><p align="right">Level:</font></i><img src="level1.png"></p> 
+Which creature walks on four legs in the morning, two legs in the afternoon, and three legs in the evening?
+</div>
+
+
+
+
+</div>
+</body>
+</html>
+
