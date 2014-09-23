@@ -45,7 +45,7 @@ margin-top:10px;
 top:150px;
 width:500px;
 left:100px;
-margin-left:400px;
+margin-left:100px;
 z-index:1;
 }
 
@@ -381,7 +381,7 @@ z-index:2;}
 </ol>
 </div>
 
-<div class="zagadka1">
+<div class="zagadka1 jewiewh">
 <b><p align="left">Which creature...</p></b><i><font color="Grey"><p align="right">Level:</font></i><img src="level1.png"></p> 
 Which creature walks on four legs in the morning, two legs in the afternoon, and three legs in the evening?
 </div>
